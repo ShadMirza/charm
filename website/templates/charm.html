@@ -1,0 +1,62 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+<!-- Breadcrumb Start -->
+<section class="breadcrumb-area">
+   <div class="breadcrumb-shape"></div>
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-12">
+            <div class="breadcrumb-inn">
+               <div class="section-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                  <h2><span>C.H.A.R.M </span></h2>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!-- Breadcrumb End -->
+
+<section class="assistant preview"
+   style="background-color:  #eef3fa; margin-top: 10%; margin-left: 0%; margin-bottom: 0%; margin-right: 0%; ">
+   <img src="{% static 'assets/img/about-shape.png' %}" alt="" style="position: relative;">
+   <div class="container-fluid">
+
+      <div class="row justify-content-center cover" style="bottom: 200px; position: relative;">
+         <div class="roboimg">
+            <img src="{% static 'assets/img/chatbot-removebg-preview.png' %}" alt=""
+               style="width: 400px; height:500px; position: relative; top: 100px; right:100px  !important">
+         </div>
+         <div class="col-11 col-sm-5 col-md-8 col-lg-4 borderbox mt-5 ap-box" style="right: 50px; position: relative;">
+
+            <div class="row textarea">
+               <div class="col" style="background-color: #fff;">
+
+               </div>
+            </div>
+            <div class="row inputarea p-1">
+               <form class="chat">
+                  <!-- <input type="text" placeholder="Type something..." id="chat" class="input" required>
+                    <button type="submit"><i class="fas fa-microphone-alt btn mic"></i></button>
+                    <button type="submit"><i class="far fa-paper-plane btn send"></i></button> -->
+                  <div class="input-group">
+                     <input type="text" class="form-control" placeholder="Message"
+                        aria-label="Recipient's username with two button addons" size="60"
+                        style="background-color: #fff;">
+                     <button class="btn btn-outline-light" type="button"
+                        style="background-color: #fff; margin-left: 7px;"><i
+                           class="far fa-paper-plane btn send"></i></button>
+                  </div>
+               </form>
+            </div>
+         </div>
+         <div class="humanimg">
+            <img src="{% static 'assets/img/remove-removebg-preview.png' %}" alt="" class="chatbot-human"
+               style="width: 400px; height:max-content; position: relative; top: 100px; left: 50px !important">
+         </div>
+      </div>
+   </div>
+   <!-- <img src="./about-shape3.jpg" alt="" style="position: relative; left:75%; bottom: 22rem;"> -->
+</section>
+{% endblock %}
